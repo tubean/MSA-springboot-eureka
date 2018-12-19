@@ -8,11 +8,11 @@
         <version>2.1.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>io.github.tubean.eureka</groupId>
-    <artifactId>zuul-server</artifactId>
+    <groupId>io.github.tubean</groupId>
+    <artifactId>config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>zuul-server</name>
-    <description>Demo MAS project for Spring Boot with Zuul and Eureka</description>
+    <name>config</name>
+    <description>Demo MSA project for Spring Boot: config service</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -26,25 +26,11 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.9.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
+            <groupId>com.eureka.config</groupId>
+            <artifactId>spring-eureka-config</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
